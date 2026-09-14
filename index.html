@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adam &amp; Eve — brand, creative and communications agency, Colombo</title>
+  <meta name="description"
+    content="A full-service brand, creative and communications agency in Colombo. Strategy, creative, advertising, media, digital, PR, events and AI marketing technology — eight disciplines held by one accountable team.">
+  <meta name="theme-color" content="#08090A">
+  <link rel="icon" href="/brand/logo.png" type="image/png">
+  <meta property="og:title" content="Adam &amp; Eve — it begins here">
+  <meta property="og:description"
+    content="Eight disciplines, one accountable team. Brand, creative and communications, from Colombo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/media/hero-poster.jpg">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+
+<body>
+  <!--
+THESIS: The reel is the argument, so the page gets out of its way — an unbroken
+picture that contracts into the layout as you scroll. Refuses the agency habit of
+drowning its own footage under a black wash to make room for chrome.
+OWN-WORLD: Neutral graphite #08090A with soft-lit surfaces, one gold #CFA335
+accent used at most once per screen, Geist at display scale on tight negative
+tracking, 20px radii, hairline borders, blurred glass chrome, generous air.
+STORY: A marketing head sees the work moving, then eight disciplines laid out
+plainly, named clients, named people — and commissions.
+FIRST VIEWPORT: The full showreel plays silent and full-bleed at natural
+brightness; scrims sit only where type lands and fade out, never as a bar. The
+wordmark line sits bottom-left at display scale with the single gold pill beside
+it; the header CTA stays hidden until the hero has passed.
+FORM: Clean modern picture-led composition, pinned by the user over the roll.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="chrome" id="chrome">
+    <!-- Removed inline styles that were crashing the header layout -->
+    <a class="chrome__mark" href="#top" aria-label="Adam &amp; Eve, back to top">
+      <img src="/brand/logo.png" alt="Adam & Eve" decoding="async">
+    </a>
+
+    <nav class="chrome__nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#people">People</a>
+      <a href="#contact">Contact</a>
+      <a href="/media/adam-and-eve-portfolio.pdf" target="_blank" rel="noopener">Portfolio (PDF)</a>
+    </nav>
+
+    <a class="pill pill--sm" href="#contact" data-press>Start a project</a>
+
+    <button class="chrome__open" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sheet">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="sheet" id="sheet" hidden aria-label="Menu">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <nav class="sheet__nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#method">Method</a>
+      <a href="#clients">Clients</a>
+      <a href="#people">People</a>
+      <a href="#contact">Contact</a>
+      <a href="/media/adam-and-eve-portfolio.pdf" target="_blank" rel="noopener">Portfolio Deck (PDF) ↗</a>
+    </nav>
+    <a class="pill" href="#contact" data-press>Start a project</a>
+  </aside>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="hero__stage">
+        <div class="hero__frame">
+          <video class="hero__video" id="hero-video" src="/media/HeroVideo.mp4" poster="/media/hero-poster.jpg" muted
+            playsinline autoplay loop preload="auto" aria-hidden="true" disablepictureinpicture></video>
+          <div class="hero__veil" aria-hidden="true"></div>
+
+          <div class="hero__copy">
+            <h1 class="hero__h" id="hero-h">IT BEGINS HERE.</h1>
+            <div class="hero__act">
+              <a class="pill pill--lg" href="#contact" data-press data-magnet>Start a project</a>
+              <a class="pill pill--lg pill--portfolio js-portfolio-link" href="/media/adam-and-eve-portfolio.pdf" target="_blank" rel="noopener" data-press data-magnet aria-label="Preview and download agency portfolio PDF">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:0.4rem;display:inline-block;vertical-align:-3px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Portfolio PDF
+              </a>
+              <p class="hero__sub">Brand, creative and communications. Colombo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────  STATEMENT  ───────────────────────────── -->
+    <section class="statement" id="statement">
+      <p class="statement__p">
+        A full-service brand, creative and communications agency.
+        Eight disciplines, one accountable team, and <em>no seams for you to referee.</em>
+      </p>
+    </section>
+
+    <!-- ────────────────────────────  WORK  ─────────────────────────────── -->
+    <section class="bay" id="work" aria-labelledby="work-h">
+      <div class="bay__head">
+        <h2 class="h2" id="work-h">Work that ran several disciplines at once.</h2>
+        <p class="note">Five engagements, each with its live record on adamandeve.lk.</p>
+      </div>
+
+      <ul class="bento">
+        <li class="tile tile--lead">
+          <a href="https://www.adamandeve.lk/projects/mts-tmr/" target="_blank" rel="noopener">
+            <span class="tile__shot"><img src="/img/work/work-mts.jpg" alt="MTS Tomorrow Together relaunch"
+                loading="eager" fetchpriority="high" decoding="async" width="1800" height="890"></span>
+            <span class="tile__meta">
+              <span class="tile__title">Tomorrow Together — three decades of trust, relaunched</span>
+              <span class="tile__copy">A complete brand relaunch for Marine Transport Services: modern identity design,
+                corporate communications and event execution, marking thirty years.</span>
+              <span class="tile__tags"><span class="tile__client">Marine Transport
+                  Services</span><span>Branding</span><span>Events</span><span>Advertising</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="tile">
+          <a href="https://www.adamandeve.lk/projects/ibike-marketing/" target="_blank" rel="noopener">
+            <span class="tile__shot"><img src="/img/work/work-ibike.jpg" alt="iBike electric mobility campaign"
+                loading="eager" decoding="async" width="1800" height="1012"></span>
+            <span class="tile__meta">
+              <span class="tile__title">Smarter electric mobility</span>
+              <span class="tile__copy">An integrated campaign: digital storytelling, creative content, photography,
+                video production and outdoor branding.</span>
+              <span class="tile__tags"><span
+                  class="tile__client">iBike</span><span>Strategy</span><span>Digital</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="tile">
+          <a href="https://www.adamandeve.lk/projects/allergy-avengers/" target="_blank" rel="noopener">
+            <span class="tile__shot"><img src="/img/work/work-allergy.jpg" alt="Allergy Avengers Walk and Run"
+                loading="eager" decoding="async" width="1800" height="1200"></span>
+            <span class="tile__meta">
+              <span class="tile__title">Allergy Avengers Walk &amp; Run</span>
+              <span class="tile__copy">A community initiative raising awareness of allergies and anaphylaxis, delivered
+                on a two-week timeline.</span>
+              <span class="tile__tags"><span class="tile__client">Institute of Allergy, Immunology &amp; Cell
+                  Biology</span><span>Events</span><span>Creative</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="tile">
+          <a href="https://www.adamandeve.lk/projects/enms/" target="_blank" rel="noopener">
+            <span class="tile__shot"><img src="/img/work/work-unido.jpg" alt="UNIDO EnMS Forum" loading="lazy"
+                decoding="async" width="1800" height="1012"></span>
+            <span class="tile__meta">
+              <span class="tile__title">EnMS Forum</span>
+              <span class="tile__copy">A platform uniting industry leaders around energy efficiency and sustainable
+                development.</span>
+              <span class="tile__tags"><span class="tile__client">UNIDO</span><span>Events</span><span>Public
+                  relations</span></span>
+            </span>
+          </a>
+        </li>
+        <li class="tile">
+          <a href="https://www.adamandeve.lk/projects/magi-lanka/" target="_blank" rel="noopener">
+            <span class="tile__shot"><img src="/img/work/work-magi.jpg" alt="Magi Enterprises Lanka ceremony"
+                loading="lazy" decoding="async" width="1800" height="1012"></span>
+            <span class="tile__meta">
+              <span class="tile__title">Foundation stone ceremony</span>
+              <span class="tile__copy">A ceremony marking a new era of growth, expansion and investment.</span>
+              <span class="tile__tags"><span class="tile__client">Magi Enterprises
+                  Lanka</span><span>Events</span><span>Creative</span></span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="portfolio-banner">
+        <div class="portfolio-banner__content">
+          <span class="portfolio-banner__tag">Agency Credentials</span>
+          <h3 class="portfolio-banner__title">Looking for our complete body of work?</h3>
+          <p class="portfolio-banner__text">Explore our comprehensive creative, brand strategy, campaign results, and multi-disciplinary showcase in the official Adam &amp; Eve agency deck.</p>
+        </div>
+        <div class="portfolio-banner__actions">
+          <a class="pill pill--portfolio js-portfolio-link" href="/media/adam-and-eve-portfolio.pdf" target="_blank" rel="noopener" data-press data-magnet>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:0.45rem;vertical-align:-2px;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            Preview Portfolio
+          </a>
+          <a class="pill pill--ghost" href="/media/adam-and-eve-portfolio.pdf" download="Adam-and-Eve-Portfolio.pdf" data-press data-magnet>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:0.45rem;vertical-align:-2px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────  SERVICES  ───────────────────────────── -->
+    <section class="bay" id="services" aria-labelledby="services-h">
+      <div class="bay__head">
+        <h2 class="h2" id="services-h">Everything a relaunch needs, held under one roof.</h2>
+        <p class="note">Eight lines, one team, one point of accountability.</p>
+      </div>
+
+      <ul class="list" data-list>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d1">Brand Strategy &amp; Consulting<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d1" hidden>
+            <p>Every brand deserves rebirth. We reimagine identities, narratives and experiences from the ground up.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d2">Creative &amp; Content Development<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d2" hidden>
+            <p>Storytelling, copywriting, design, video production, photography, animation, branded content and
+              localization.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d3">Advertising &amp; Media<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d3" hidden>
+            <p>ATL and BTL campaigns, outdoor and transit advertising, integrated media planning, programmatic buying
+              and brand partnerships.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d4">Digital Marketing &amp; Social Media<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d4" hidden>
+            <p>Social media management, influencer partnerships, SEO and SEM, email campaigns, website development and
+              analytics.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d5">Public Relations &amp; Corporate
+              Communications<span class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d5" hidden>
+            <p>Press relations, crisis management, thought leadership, executive profiling, stakeholder communication
+              and CSR storytelling.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d6">Events &amp; Activation<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d6" hidden>
+            <p>Events, activations, exhibitions, retail experiences and guerrilla marketing.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d7">Business &amp; Strategic Support<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d7" hidden>
+            <p>Analytics, ROI tracking, journey mapping, dashboards and business development strategy.</p>
+          </div>
+        </li>
+        <li class="row">
+          <h3><button type="button" aria-expanded="false" aria-controls="d8">AI Based Marketing Technology<span
+                class="row__mark" aria-hidden="true"></span></button></h3>
+          <div class="row__panel" id="d8" hidden>
+            <p>AI strategy and governance, generative content, predictive analytics, personalization, automation,
+              chatbots, social listening, creative optimization and measurement frameworks.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───────────────────────────  METHOD  ────────────────────────────── -->
+    <section class="bay" id="method" aria-labelledby="method-h">
+      <div class="bay__head">
+        <h2 class="h2" id="method-h">Three things every piece of work has to do.</h2>
+      </div>
+
+      <ol class="pillars">
+        <li>
+          <h3>Genesis</h3>
+          <p>Every brand deserves rebirth. We reimagine identities, narratives and experiences from the ground up.</p>
+        </li>
+        <li>
+          <h3>Echo</h3>
+          <p>We craft narratives with resonance — campaigns that echo through time, space and conversation.</p>
+        </li>
+        <li>
+          <h3>Spark</h3>
+          <p>Our work provokes thought, emotion and action — the catalyst that turns brands into movements.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────────────────────────  CLIENTS  ───────────────────────────── -->
+    <section class="bay bay--paper" id="clients" aria-labelledby="clients-h">
+      <div class="bay__head">
+        <h2 class="h2" id="clients-h">Brands and institutions we work with.</h2>
+      </div>
+      <ul class="wall">
+        <li><img src="/img/clients/unido.png" alt="UNIDO" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/european-union.png" alt="European Union" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/global-gateway.png" alt="Global Gateway" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/mts.png" alt="MTS Marine Transport Services" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/ibike.png" alt="iBike" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/fast-and-up.png" alt="Fast&amp;Up" loading="lazy" decoding="async"></li>
+        <li data-mark="fine"><img src="/img/clients/upalis.png" alt="Upali's" loading="lazy" decoding="async"></li>
+        <li data-mark="fine"><img src="/img/clients/arcade-of-aluminium.png" alt="Arcade of Aluminium" loading="lazy"
+            decoding="async"></li>
+        <li><img src="/img/clients/iai.png" alt="Institute of Allergy, Immunology and Cell Biology" loading="lazy"
+            decoding="async"></li>
+        <li><img src="/img/clients/ayu-ventures.png" alt="Ayu Ventures" loading="lazy" decoding="async"></li>
+        <li data-mark="fine"><img src="/img/clients/leema-interior.png" alt="Leema Interior" loading="lazy"
+            decoding="async"></li>
+        <li><img src="/img/clients/cocofry.png" alt="CocoFry" loading="lazy" decoding="async"></li>
+        <li><img src="/img/clients/jkarlstone.png" alt="JKarlstone" loading="lazy" decoding="async"></li>
+        <li data-mark="fine"><img src="/img/clients/cey-laya.png" alt="Cey Laya" loading="lazy" decoding="async"></li>
+        <li data-mark="solid"><img src="/img/clients/ananda-walk.png" alt="Ananda Walk" loading="lazy" decoding="async">
+        </li>
+        <li data-mark="solid"><img src="/img/clients/nalanda-walk.png" alt="Nalanda Walk" loading="lazy"
+            decoding="async"></li>
+        <li><img src="/img/clients/battle-of-the-maroons.png" alt="Battle of the Maroons" loading="lazy"
+            decoding="async"></li>
+        <li><img src="/img/clients/fifty-years.png" alt="50 Years of Excellence" loading="lazy" decoding="async"></li>
+        <li data-mark="fine"><img src="/img/clients/crest-01.png" alt="Client crest" loading="lazy" decoding="async">
+        </li>
+        <li data-mark="fine"><img src="/img/clients/crest-02.png" alt="Client crest" loading="lazy" decoding="async">
+        </li>
+      </ul>
+    </section>
+
+    <!-- ──────────────────────────  ENDORSEMENTS  ──────────────────────── -->
+    <section class="bay" id="voices" aria-labelledby="voices-h">
+      <div class="bay__head">
+        <h2 class="h2" id="voices-h">Three clients, in their own words.</h2>
+      </div>
+
+      <div class="voices">
+        <figure class="voice voice--lead">
+          <blockquote>
+            <p>Adam &amp; Eve played a key role in the successful official launch of the I BIKE brand during I Grid
+              Holdings' 10-year milestone celebration. Their creativity, professionalism, attention to detail and
+              flawless execution transformed our vision into an unforgettable brand experience.</p>
+          </blockquote>
+          <figcaption>
+            <img src="/img/people/avatar-nalinda.jpg" alt="" loading="lazy" decoding="async" width="96" height="96">
+            <span><b>Mr. Nalinda Amarasinghe</b>Chairman, I Grid Holdings</span>
+          </figcaption>
+        </figure>
+
+        <figure class="voice">
+          <blockquote>
+            <p>Adam &amp; Eve successfully managed Arcade of Champions, our Customer Appreciation Night, with
+              exceptional professionalism and reliability. From planning to execution, their team handled every detail
+              seamlessly and exceeded our expectations.</p>
+          </blockquote>
+          <figcaption>
+            <img src="/img/people/avatar-heshan.jpg" alt="" loading="lazy" decoding="async" width="96" height="96">
+            <span><b>Mr. Heshan Padukka</b>Director, Arcade of Aluminium</span>
+          </figcaption>
+        </figure>
+
+        <figure class="voice">
+          <blockquote>
+            <p>Despite a challenging two-week timeline, Adam &amp; Eve delivered an exceptional Allergy Avengers Walk
+              &amp; Run 2025 event that exceeded our expectations. Their dedication, professionalism and supportive
+              approach made the process stress-free.</p>
+          </blockquote>
+          <figcaption>
+            <img src="/img/people/avatar-chandima.jpg" alt="" loading="lazy" decoding="async" width="96" height="96">
+            <span><b>Prof. Chandima Jeewandara</b>Director, Institute of Allergy, Immunology &amp; Cell Biology</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────  PEOPLE  ────────────────────────────── -->
+    <section class="bay" id="people" aria-labelledby="people-h">
+      <div class="bay__head">
+        <h2 class="h2" id="people-h">The two who sign the work.</h2>
+      </div>
+
+      <div class="dirs">
+        <article class="dir">
+          <img src="/img/people/director-sudewa.png" alt="Sudewa Hettiarachchi" loading="lazy" decoding="async"
+            width="600" height="750">
+          <div>
+            <h3>Sudewa Hettiarachchi</h3>
+            <p class="dir__role">Founder / Chief Executive Officer</p>
+            <p>A seasoned media specialist with over 25 years of experience in journalism, broadcasting and media
+              management. An award-winning professional with both local and international recognition, he has held key
+              leadership roles including Director of News and Current Affairs at ABC Radio, CEO of EBC Broadcasting, and
+              Director General of the President's Media Division. Renowned for his innovative approach, Sudewa has been
+              instrumental in transforming major Sri Lankan media institutions such as Hiru and Swarnawahini.</p>
+          </div>
+        </article>
+
+        <article class="dir">
+          <img src="/img/people/director-saranga.png" alt="Saranga Wijeyarathne" loading="lazy" decoding="async"
+            width="600" height="750">
+          <div>
+            <h3>Saranga Wijeyarathne</h3>
+            <p class="dir__role">Founder / Chief Strategy Officer</p>
+            <p>A pioneering marketing strategist and media visionary with over two decades of experience in brand and
+              communication leadership. As a founding partner of Ayu Ventures and the current President of the Colombo
+              Chamber of Commerce, he has launched, built and transformed brands across diverse industries. His
+              innovative strategies have driven remarkable growth and earned him international recognition, including
+              the International Brand Leadership Award and Media Professional of the Year.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────  CONTACT  ────────────────────────────── -->
+    <section class="bay bay--end" id="contact" aria-labelledby="contact-h">
+      <div class="end">
+        <div class="end__left">
+          <h2 class="h1" id="contact-h">Start the next one.</h2>
+
+          <address class="card">
+            <p class="card__co">Greenleaves Ventures (Private) Limited</p>
+            <p>#9/2, Dudley Senanayake Mawatha,<br>Colombo 08, Sri Lanka.</p>
+            <p class="card__lines">
+              <a href="tel:+94112689441">(+94) 112 689 441</a>
+              <a href="tel:+94772414842">(+94) 77 241 4842</a>
+            </p>
+            <p class="card__lines">
+              <a href="mailto:hello@adamandeve.lk">hello@adamandeve.lk</a>
+              <a href="mailto:digital@adamandeve.lk">digital@adamandeve.lk</a>
+            </p>
+          </address>
+
+          <a class="pill pill--ghost" href="https://wa.me/94772414842" target="_blank" rel="noopener" data-press>Message
+            on WhatsApp</a>
+        </div>
+
+        <form class="form" id="form" data-endpoint="" novalidate>
+          <div class="field">
+            <input type="text" id="f-name" name="name" required autocomplete="name" placeholder=" ">
+            <label for="f-name">Name</label>
+            <p class="field__err" data-err></p>
+          </div>
+          <div class="field">
+            <input type="email" id="f-email" name="email" required autocomplete="email" placeholder=" ">
+            <label for="f-email">Email</label>
+            <p class="field__err" data-err></p>
+          </div>
+          <div class="field">
+            <input type="tel" id="f-tel" name="telephone" autocomplete="tel" placeholder=" ">
+            <label for="f-tel">Telephone <i>optional</i></label>
+            <p class="field__err" data-err></p>
+          </div>
+          <div class="field">
+            <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
+            <label for="f-msg">What are you launching?</label>
+            <p class="field__err" data-err></p>
+          </div>
+          <button type="submit" class="pill pill--lg pill--full" data-press data-magnet>Send the brief</button>
+          <p class="form__status" data-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__row">
+      <p>&copy; <span data-year>2026</span> Adam &amp; Eve. All rights reserved.</p>
+      <nav aria-label="Elsewhere">
+        <a href="https://www.linkedin.com/company/adam-eve-lk/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.facebook.com/adamandeve.lk" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+      <p>Greenleaves Ventures (Private) Limited · Colombo</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
