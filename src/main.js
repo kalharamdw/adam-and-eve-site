@@ -6,6 +6,9 @@
 import '@fontsource-variable/geist';
 import './styles.css';
 
+import { db } from './firebase.js';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
 import { animate } from 'motion';
 import {
   T,
@@ -173,7 +176,12 @@ if (chrome) {
 // 8. Active navigation scrollspy
 const navLinks = [...document.querySelectorAll('.chrome__nav a')];
 const navSections = navLinks
-  .map((a) => document.querySelector(a.getAttribute('href')))
+  .map((a) => {
+    const href = a.getAttribute('href');
+    // Ignore links that don't start with '#' (like your PDF link) to prevent crashes
+    if (!href || !href.startsWith('#')) return null; 
+    return document.querySelector(href);
+  })
   .filter(Boolean);
 
 if (navSections.length) {
@@ -298,29 +306,22 @@ if (form) {
     }
 
     const data = Object.fromEntries(new FormData(form).entries());
-    const endpoint = form.dataset.endpoint;
-
-    if (!endpoint) {
-      const body = `Name: ${data.name}\nEmail: ${data.email}\nTelephone: ${data.telephone || '—'}\n\n${data.message}`;
-      window.location.href = `mailto:hello@adamandeve.lk?subject=${encodeURIComponent('New brief — ' + data.name)}&body=${encodeURIComponent(body)}`;
-      if (status) status.textContent = 'Opening your mail client with the brief filled in.';
-      return;
-    }
-
     const submitBtn = form.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.disabled = true;
     if (status) status.textContent = 'Sending…';
 
     try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(data),
+      await addDoc(collection(db, 'customer_briefs'), {
+        name: data.name,
+        email: data.email,
+        telephone: data.telephone || null,
+        message: data.message || '',
+        submittedAt: serverTimestamp()
       });
-      if (!res.ok) throw new Error(res.statusText);
       form.reset();
       if (status) status.textContent = 'Received. We will come back to you within two working days.';
-    } catch {
+    } catch (error) {
+      console.error(error);
       if (status) {
         status.textContent = 'That did not send. Email hello@adamandeve.lk and we will pick it up.';
         status.classList.add('is-bad');
